@@ -19,9 +19,11 @@ sudo apt upgrade
 sudo apt install default-jdk
 ```
 
-Next you need to download the [Minecraft_server.1.21.jar](https://www.minecraft.net/en-us/download/server) file from minecrafts website (note: the version number of minecraft will change with updates)  / 
+Next you need to download the [Minecraft_server.1.21.jar](https://www.minecraft.net/en-us/download/server) file from minecrafts website (note: the version number of minecraft will change with updates) 
 
 after installing the minecraftserver.jar file you need to run the following command
+
+
 
 ```
 cd ~
@@ -32,6 +34,18 @@ java -Xmx1000M -Xms1000M -jar server.jar nogui
 ```
 
 After this step you will need to accept the EULA agreenment, so you need to open the "nano eula.txt" file and set `eula=true` then press ctrl-x and save the file, Then run the above command again with the up arrow.  
+
+if you want to use a differnt version of minecraft you will need to dowwlaod the jar file for the verison you want.
+
+if you have a differnt version you need to do the following command (Note you will need to add your file path to the jar file.
+)
+```
+cd ~
+mkdir MinecraftServer
+cd MinecraftServer
+cp C:\your\file\path\server-1-8-9.jar ./server.jar
+java -Xmx1000M -Xms1000M -jar server.jar nogui
+```
 
 ## connecting to Minecraft Server 
 
