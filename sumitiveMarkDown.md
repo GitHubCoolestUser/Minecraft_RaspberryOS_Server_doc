@@ -11,7 +11,7 @@ Links
 
 ## Setup
 
-First things first you need to update/upgrade you `Raspberry Pi`
+First things first you need to update/upgrade you `Raspberry Pi`and also install the java JDK
 run the following command
 
 ```
@@ -24,7 +24,7 @@ Next you need to download the [Minecraft_server.1.21.jar](https://www.minecraft.
 
 after installing the minecraftserver.jar file you need to run the following command
 
-The amount of ram that the server will use will depend on what you put in the `-Xmx?M` and `-Xms?`.
+The amount of ram that the server will use will depend on what you put in the `-Xmx?M` and `-Xms?`. in this example of mine I using 1000MB or 1G
 
 ```
 cd ~
@@ -53,7 +53,9 @@ you will need to accept the **EULA agreenment**, so you need to open the "**`nan
 
 ## connecting to Minecraft Server 
 
-Run `ifconfig` to get your Raspberry Pi's **IVP4 Pi address**. After you can open minecraft and then you can open minecraft java edition press **multiplayer button** then press **add server** after type in the name for the server and then the **IVP4 IP address** for the RaspBerry Pi.
+Run `ifconfig` to get your Raspberry Pi's **IVP4 Pi address**. After you can open minecraft and then you can open minecraft java edition press **multiplayer button** then press **connect Directly button** after type in the  **IVP4 IP address** for the RaspBerry Pi and you will connect.
+
+(Note: connecting will only work over the same network for now becaue we have not setup port forwarding)
 
 ## Editing Server Properties
 
